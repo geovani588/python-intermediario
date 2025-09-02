@@ -1,8 +1,8 @@
 # reduce - faz a reducao de um iteravel em um valor
 
-from functools import reduce # ele n importavel entao tem que digitar
-
 from functools import reduce
+
+
 
 produtos = [
     {'nome': 'Produto 5', 'preco': 10},
@@ -13,11 +13,11 @@ produtos = [
 ]
 
 
-# def funcao_do_reduce(acumulador, produto):
-#     print('acumulador', acumulador)
-#     print('produto', produto)
-#     print()
-#     return acumulador + produto['preco']
+def funcao_do_reduce(acumulador, produto):
+    print('acumulador', acumulador)
+    print('produto', produto)
+    print()
+    return acumulador + produto['preco']
 
 
 total = reduce(
@@ -29,10 +29,10 @@ total = reduce(
 print('Total é', total)
 
 
-# total = 0
-# for p in produtos:
-#     total += p['preco']
+total = 0
+for p in produtos:
+    total += p['preco']
 
-# print(total)
+print(total)
 
-# print(sum([p['preco'] for p in produtos]))
+print(sum([p['preco'] for p in produtos]))
